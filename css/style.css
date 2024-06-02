@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Reddit Mono",Arial, sans-serif;
+    
+}
+
+.sidebar-menu {
+    width: 150px;
+    background-color: #333;
+    float: left;
+    height: 400px;
+    padding: 20px;
+    display: flex; /* Добавлено для использования Flexbox */
+    flex-direction: column; /* Добавлено для вертикального расположения элементов */
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: center; /* Добавлено для выравнивания по горизонтали */
+    position: absolute; /* Добавлено для абсолютного позиционирования */
+    left: 0; /* Расположение слева от страницы */
+    top: 50%; /* Расположение на половине высоты страницы */
+    transform: translateY(-50%); /* Сдвиг вверх на половину высоты блока для выравнивания по центру */
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Добавлено для удаления отступа слева */
+}
+
+.sidebar-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center; /* Выравнивание текста по горизонтали */
+  justify-content: center; /* Добавлено для выравнивания по горизонтали */
+}
+
+.sidebar-menu a:hover {
+    background-color: #555;
+}
+
+main {
+    margin-left: 200px;
+    padding: 10px;
+    flex-grow: 1; /* Добавлено для растягивания основного контента на всю ширину */
+}
